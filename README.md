@@ -5,6 +5,8 @@ This is the repository for the paper Token Memory Transformer with Infinite Cont
 Please run the following commands to install the environment
 ```bash
 pip install -r requirements.txt
+```
+```bash
 pip install git+https://github.com/huggingface/transformers
 ```
 
@@ -33,8 +35,8 @@ accelerate launch --num_processes=3 --mixed_precision='bf16' \
     --block_size=32768 \
     --tracking_name 'pg19_32k' \
     --lr_scheduler_type 'cosine'
+```
 ```bash
-
 ## On c4-en
 accelerate launch --num_processes=3 --mixed_precision='bf16' \
     train_token_llama.py \
@@ -58,7 +60,8 @@ accelerate launch --num_processes=3 --mixed_precision='bf16' \
     --block_size=32768 \
     --tracking_name 'c4_32k' \
     --lr_scheduler_type 'cosine'
-
+```
+```bash
 ## On booksum
 accelerate launch --num_processes=3 --mixed_precision='bf16' \
     train_token_llama_sum.py \
@@ -81,4 +84,4 @@ accelerate launch --num_processes=3 --mixed_precision='bf16' \
     --block_size=32768 \
     --tracking_name 'booksum_32k' \
     --lr_scheduler_type 'cosine'
-
+```
