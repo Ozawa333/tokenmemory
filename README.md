@@ -36,8 +36,9 @@ accelerate launch --num_processes=3 --mixed_precision='bf16' \
     --tracking_name 'pg19_32k' \
     --lr_scheduler_type 'cosine'
 ```
-```bash
+
 ## On c4-en
+```bash
 accelerate launch --num_processes=3 --mixed_precision='bf16' \
     train_token_llama.py \
     --model_name_or_path='princeton-nlp/Sheared-LLaMA-1.3B' \
@@ -61,8 +62,9 @@ accelerate launch --num_processes=3 --mixed_precision='bf16' \
     --tracking_name 'c4_32k' \
     --lr_scheduler_type 'cosine'
 ```
-```bash
+
 ## On booksum
+```bash
 accelerate launch --num_processes=3 --mixed_precision='bf16' \
     train_token_llama_sum.py \
     --model_name_or_path='princeton-nlp/Sheared-LLaMA-1.3B' \
