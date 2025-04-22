@@ -7,3 +7,4 @@ evaluate
 scikit-learn
 wandb
 rouge_score
+nltk
