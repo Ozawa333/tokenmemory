@@ -8,3 +8,4 @@ scikit-learn
 wandb
 rouge_score
 nltk
+rouge-score
